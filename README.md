@@ -1,5 +1,5 @@
 # auto-Gdorking
-Auto-Gdorking is a Python-based tool designed to automate the process of Google Dorking. It helps users efficiently search for sensitive or publicly exposed information using advanced Google search operators. This tool is ideal for penetration testers, security researchers, and anyone interested in exploring the power of Google search operators for advanced querying.
+auto-Gdorking is a Python-based tool designed to automate the process of Google Dorking. It helps users efficiently search for sensitive or publicly exposed information using advanced Google search operators. This tool is ideal for penetration testers, security researchers, and anyone interested in exploring the power of Google search operators for advanced querying.
 
 ## Features
 
