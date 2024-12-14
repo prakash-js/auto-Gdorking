@@ -1,0 +1,26 @@
+inurl:"login"
+intext:"index of"
+filetype:xls
+filetype:xlsx
+filetype:php
+filetype:txt
+filetype:asp
+filetype:sql
+inurl:"admin"
+filetype:xls
+filetype:pdf
+intitle:"database"
+filetype:conf
+intitle: "access log"
+filetype:log
+inurl:"/cgi-bin/"
+inurl:"/.git"
+phpMyAdmin -www filetype:conf
+filetype:plist
+filetype:csv
+filetype:txt "License Key"
+filetype:pub "ssh-rsa"
+inurl:/host.txt
+filetype:env
+inurl:"/var/log/"
+inurl:"/phpmyadmin"
