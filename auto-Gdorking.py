@@ -4,7 +4,7 @@ import json
 
 
 def file_type(url_get, domain_get, count_get):
-    with open('dorking.txt', 'a') as writer:
+    with open('output.txt', 'a') as writer:
         with open('payload.txt', 'r') as file:
             for payload in file:
                 requesting = requests.get(f"{url_get}site:{domain_get} {payload.strip()}&num={count_get}")
@@ -21,34 +21,35 @@ def file_type(url_get, domain_get, count_get):
                     pass
 
 
+
 def changing_Key_or_ID():
     while True:
         getting_input = str(
             input("If you want to change SearchID type 'Id' and for API key type 'API' ")).lower().strip()
         if getting_input == 'api':
             ask3 = str(input("Enter the API key here : "))
-            with open('api_key.txt', 'w') as writing:
+            with open('config/api_key.txt', 'w') as writing:
                 writing.truncate(0)
                 writing.write(ask3)
         elif getting_input == 'id':
             ask4 = str(input("Enter the search id here : "))
-            with open('api_key.txt', 'w') as writing:
+            with open('config/api_key.txt', 'w') as writing:
                 writing.truncate(0)
                 writing.write(ask4)
 
 
-if not os.path.exists('api_key.txt'):
-    with open('api_key.txt', 'a') as api:
+if not os.path.exists('config/api_key.txt'):
+    with open('config/api_key.txt', 'a') as api:
         print("created the api_key.txt created : ")
-if os.path.getsize('api_key.txt') == 0:
-    with open('api_key.txt', 'a') as api:
+if os.path.getsize('config/api_key.txt') == 0:
+    with open('config/api_key.txt', 'a') as api:
         ask = str(input("Enter the api key for google custom search : "))
         api.write(ask)
-if not os.path.exists('search_id.txt'):
-    with open('search_id.txt', 'a') as searchID:
+if not os.path.exists('config/search_id.txt'):
+    with open('config/search_id.txt', 'a') as searchID:
         print("created the api_key.txt created : ")
-if os.path.getsize('search_id.txt') == 0:
-    with open('search_id.txt', 'a') as SearchID:
+if os.path.getsize('config/search_id.txt') == 0:
+    with open('config/search_id.txt', 'a') as SearchID:
         ask2 = str(input("Enter the search id for google custom search : "))
         SearchID.write(ask2)
 
@@ -61,8 +62,8 @@ while True:
     elif answer == 'N':
         break
 
-apikey = open('api_key.txt', 'r').read()
-search_id = open('search_id.txt', 'r').read()
+apikey = open('config/api_key.txt', 'r').read()
+search_id = open('config/search_id.txt', 'r').read()
 
 domain = str(input("Enter the Domain name : "))
 count = int(input("Enter the Number of search result : "))
