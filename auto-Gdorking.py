@@ -43,14 +43,14 @@ if not os.path.exists('config/api_key.txt'):
         print("created the api_key.txt created : ")
 if os.path.getsize('config/api_key.txt') == 0:
     with open('config/api_key.txt', 'a') as api:
-        ask = str(input("Enter the api key for google custom search : "))
+        ask = str(input("Enter your API Key: : "))
         api.write(ask)
 if not os.path.exists('config/search_id.txt'):
     with open('config/search_id.txt', 'a') as searchID:
         print("created the api_key.txt created : ")
 if os.path.getsize('config/search_id.txt') == 0:
     with open('config/search_id.txt', 'a') as SearchID:
-        ask2 = str(input("Enter the search id for google custom search : "))
+        ask2 = str(input("Enter your Search ID : "))
         SearchID.write(ask2)
 
 while True:
