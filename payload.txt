@@ -1,26 +1,26 @@
-inurl:"login"
-intext:"index of"
-filetype:xls
-filetype:xlsx
-filetype:php
-filetype:txt
-filetype:asp
-filetype:sql
-inurl:"admin"
-filetype:xls
-filetype:pdf
-intitle:"database"
-filetype:conf
-intitle: "access log"
-filetype:log
-inurl:"/cgi-bin/"
-inurl:"/.git"
-phpMyAdmin -www filetype:conf
-filetype:plist
-filetype:csv
-filetype:txt "License Key"
-filetype:pub "ssh-rsa"
-inurl:/host.txt
-filetype:env
-inurl:"/var/log/"
-inurl:"/phpmyadmin"
+inurl:login | inurl:admin | inurl:signin | intitle:"admin panel" | intitle:"login"
+inurl:"/cgi-bin/" | inurl:"/.git" | inurl:"/.env" | inurl:"/phpmyadmin" | inurl:"/var/log/" | inurl:"/backup" | inurl:"/config"
+filetype:conf | filetype:log | filetype:env | filetype:ini | filetype:sql | filetype:json | filetype:xml | filetype:csv | filetype:plist
+filetype:txt "License Key" | filetype:json "api_key" | filetype:env "DB_PASSWORD" | filetype:xml "password"
+intitle:"database" filetype:sql | inurl:db_backup | intext:"Dumping data for table" | intitle:"phpMyAdmin"
+filetype:pub "ssh-rsa" | filetype:pem | filetype:key
+intext:"index of" | intext:"Directory Listing for /" | intitle:"Index of /"
+intitle: "access log" filetype:log | inurl:/host.txt | inurl:error.log | inurl:debug.log | filetype:log
+ext:bak | ext:old | ext:swp | ext:bkf | ext:zip | ext:tar.gz | ext:gz | ext:7z | ext:rar | ext:tar | ext:bz2
+inurl:wp-config.php | inurl:drupal | inurl:joomla | inurl:site/wp-content/uploads | inurl:typo3 | inurl:"/cms/"
+inurl:".git/config" | inurl:".env" | inurl:"/.htaccess" | inurl:"/.DS_Store"
+inurl:"/wp-config.php" | inurl:"/.well-known/security.txt"
+inurl:"config.json" | inurl:"config.js" | filetype:json "api_key"
+inurl:"/phpinfo.php" | inurl:"/server-status" | inurl:"/server-info"
+inurl:"/admin/config.php" | inurl:"/web.config" | filetype:ini "password"
+inurl:"/uploads/" | inurl:"/attachments/" | inurl:"/public/uploads/"
+inurl:"/logs/" | inurl:"/debug.log" | inurl:"/php_errors.log" | filetype:log
+inurl:"/db.sql" | inurl:"/database.sql" | intext:"Dumping data for table"
+filetype:sql "password" | filetype:log "password" | filetype:txt "credentials"
+filetype:yaml "AWS_ACCESS_KEY_ID" | filetype:json "private_key"
+intext:"password=" | intext:"admin password" | intext:"DB_PASSWORD"
+intext:"API_KEY=" | intext:"SECRET_KEY=" | intext:"ACCESS_TOKEN="
+inurl:"/wp-content/debug.log" | inurl:"/wp-content/uploads/"
+intitle:"index of /backup" | intitle:"index of /database" | intitle:"index of /config"
+intitle:"index of /private" | intitle:"index of /secrets" | intitle:"index of /logs"
+
